@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - UI/UX Julio Caria</title>
+    <meta
+      name="description"
+      content="Learn a little about a 20-year-old who enjoys creating interfaces and a variety of technology-related projects."
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+      <span>
+        <a href="#"
+          ><img src="../assets/logo.svg" alt="Jottace Logo" loading="lazy"
+        /></a>
+      </span>
+
+      <navbar id="navbar">
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- <div class="menu-hamburguer">
+          <i class="ph ph-list"></i>
+        </div> -->
+      </navbar>
+      <button class="btn btn-talk">
+        Let's Talk
+        <i class="ph ph-envelope"></i>
+      </button>
+    </header>
+    <main id="main">
+      <div class="main-content">
+        <div class="left-container">
+          <h2 class="subtitle white">👋 Hello,</h2>
+          <h1 class="title primary">I'm Júlio Caria</h1>
+          <p class="description">
+            Welcome to my portfolio, I built this page to introduce myself and
+            show some of my projects.
+          </p>
+          <span
+            ><a href="#about" class="btn btn-seemore"
+              >See more <i class="ph ph-arrow-right"></i></a
+          ></span>
+        </div>
+        <div class="right-container">
+          <div class="bubble-image">
+            <img
+              src="../assets/person-vector.png"
+              alt="Personagem vetorizado"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="down-arrow">
+        <a href="#about"><i class="ph ph-arrow-circle-down"></i></a>
+      </div>
+    </main>
+
+    <section id="about">
+      <div class="section-message">
+        <h2 class="title">About</h2>
+        <p class="description">
+          In this section, you will learn a little more about who I am and what
+          motivates me. Feel free to learn more about my journey as a
+          professional! 😊
+        </p>
+      </div>
+      <div class="flow-description">
+        <div class="image-about">
+          <img src="" alt="Júlio Caria Image" loading="lazy" />
+        </div>
+        <div class="chat-flow">
+          <div class="chat">
+            <p class="description">
+              👋 Hello! I'm a 20-year-old UX/UI student who loves creating
+              functional, beautiful and efficient interfaces for web
+              applications. 🖌️✨
+            </p>
+          </div>
+          <div class="chat">
+            <p class="description">
+              💻 I love the idea of ​​how a web application can mark the user's
+              mind, whether by having a beautiful and intuitive interface, or by
+              transmitting a bad experience due to the contrast of colors,
+              elements and texts.
+            </p>
+          </div>
+          <div class="chat">
+            <p class="description">
+              🧠 I want to explore new possibilities, constantly challenge
+              myself with different ideas and experience things that broaden my
+              vision.
+            </p>
+          </div>
+        </div>
+        <div class="social-medias">
+          <div class="media">
+            <a href="#"><i class="ph-fill ph-github-logo"></i></a>
+          </div>
+          <div class="media">
+            <a href="#"><i class="ph-bold ph-at"></i></a>
+          </div>
+          <div class="media">
+            <a href="#"><i class="ph-bold ph-linkedin-logo"></i></a>
+          </div>
+          <div class="media">
+            <a href="#"><i class="ph-bold ph-behance-logo"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-message">
+          <h2 class="title">Projects</h2>
+          <p class="description">
+            Here are some of the projects I've worked on. Feel free to explore,
+            and if you want to know more, I'm here!
+          </p>
+        </div>
+        <div class="input-group">
+          <label for="search-project">
+            <i class="ph-bold ph-magnifying-glass"></i>
+          </label>
+          <input
+            type="text"
+            id="search-project"
+            placeholder="Filter by title or description"
+          />
+        </div>
+
+        <div class="filters">
+          <span class="filter">All</span>
+          <span class="filter">UI/UX Design</span>
+          <span class="filter">HTML/CSS and JS</span>
+          <span class="filter">ReactJS</span>
+        </div>
+      </div>
+
+      <div class="projects-cards">
+        <div class="card">
+          <div class="left-container">
+            <img
+              src="../assets/Project_Dynamic_Digital_Clock.png"
+              alt="Dynamic Digital Clock"
+              loading="lazy"
+            />
+          </div>
+          <div class="right-container">
+            <h3 class="name-project">Digital Dynamic Clock</h3>
+            <p class="description-project">
+              This project was developed using HTML, CSS and JavaScript to
+              create an interactive interface that displays the date and time in
+              real time. The goal was to create a dynamic digital clock that
+              updates automatically, in addition to showing the day of the week,
+              the full date and the current year.
+            </p>
+            <div class="badges-project">
+              <span class="badge">HTML</span>
+              <span class="badge">CSS</span>
+              <span class="badge">JavaScript</span>
+            </div>
+            <div class="links-project">
+              <div class="link">
+                <a href="">
+                  See Figma
+                  <i class="ph ph-figma-logo"></i>
+                </a>
+              </div>
+              <div class="link">
+                <a href="">
+                  Visit Project
+                  <i class="ph-bold ph-arrow-square-out"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="left-container">
+            <img
+              src="../assets/Project_Uni_Academy.png"
+              alt="UniAcademy"
+              loading="lazy"
+            />
+          </div>
+          <div class="right-container">
+            <h3 class="name-project">UniAcademy</h3>
+            <p class="description-project">
+              This project was developed in Figma and consists of a user
+              interface (UI) for a gym management system. The focus was to
+              create a modern, intuitive and functional design that would serve
+              both gym managers and customers, facilitating the control of
+              subscriptions, training tracking and access to important
+              information.
+            </p>
+            <div class="badges-project">
+              <span class="badge">Figma</span>
+            </div>
+            <div class="links-project">
+              <div class="link">
+                <a href="">
+                  See Figma
+                  <i class="ph ph-figma-logo"></i>
+                </a>
+              </div>
+              <div class="link">
+                <a href="">
+                  Visit Project
+                  <i class="ph-bold ph-arrow-square-out"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="left-container">
+            <img
+              src="../assets/Project_mimo.png"
+              alt="Mimo - Não passe horas escolhendo um presente"
+              loading="lazy"
+            />
+          </div>
+          <div class="right-container">
+            <h3 class="name-project">Mimo - Choosing a gift is easy</h3>
+            <p class="description-project">
+              This project was developed in Figma and aims to create an
+              interface for a gift recommendation app. The main idea of ​​the
+              project is to provide users with a personalized experience by
+              suggesting gifts based on information provided, such as
+              preferences, age, interests, and budget. The design was designed
+              to be intuitive, pleasant, and easy to use, ensuring that users
+              find the ideal gift quickly and without complications.
+            </p>
+            <div class="badges-project">
+              <span class="badge">Figma</span>
+            </div>
+            <div class="links-project">
+              <div class="link">
+                <a href="">
+                  See Figma
+                  <i class="ph ph-figma-logo"></i>
+                </a>
+              </div>
+              <div class="link">
+                <a href="">
+                  Visit Project
+                  <i class="ph-bold ph-arrow-square-out"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact"></section>
+
+    <footer id="footer"></footer>
+  </body>
+</html>
