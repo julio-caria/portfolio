@@ -87,6 +87,18 @@ textarea {
   }
 }
 
+@keyframes linearmove {
+  0%{
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(35px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /* HEADER */
 
 header {
@@ -221,9 +233,10 @@ main #down-arrow {
   margin-top: 5%;
 }
 
-main #down-arrow a {
-  font-size: 4.8rem;
+main #down-arrow #arrow-element {
+  font-size: 3.2rem;
   color: var(--primary-color);
+  animation: linearmove 4s  infinite;
 }
 
 /* ABOUT SECTION */
