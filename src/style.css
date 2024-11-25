@@ -48,6 +48,14 @@ section {
   font-size: 1.8rem;
   font-weight: 500;
   color: var(--white-color);
+  background-color: var(--primary-color);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  filter: brightness(1.1);
+  transition: 0.4s;
 }
 
 a {
@@ -61,6 +69,15 @@ input,
 textarea {
   font-family: "Poppins", sans-serif;
   font-family: 1.6rem;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid var(--primary-color); 
 }
 
 ::-webkit-scrollbar {
@@ -88,7 +105,7 @@ textarea {
 }
 
 @keyframes linearmove {
-  0%{
+  0% {
     transform: translateY(0);
   }
   50% {
@@ -236,7 +253,7 @@ main #down-arrow {
 main #down-arrow #arrow-element {
   font-size: 3.2rem;
   color: var(--primary-color);
-  animation: linearmove 4s  infinite;
+  animation: linearmove 4s infinite;
 }
 
 /* ABOUT SECTION */
@@ -425,7 +442,7 @@ main #down-arrow #arrow-element {
 
 #projects .container {
   width: 100%;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   gap: 3rem;
 }
@@ -509,7 +526,7 @@ main #down-arrow #arrow-element {
   align-items: center;
 
   gap: 3rem;
-  
+
   width: 100%;
 }
 
@@ -586,4 +603,57 @@ main #down-arrow #arrow-element {
 
 #projects .projects-cards .link a:hover {
   filter: brightness(1.2);
+}
+
+/* CONTACT SECTION */
+
+#contact {
+  color: var(--white-color);
+}
+
+#contact .section-message {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#contact .title {
+  font-size: 3.2rem;
+}
+
+#contact .description {
+  font-size: 1.8rem;
+}
+
+#contact .contact-form {
+  margin-top: 6rem;
+  width: 100%;
+}
+
+#contact .contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#contact .contact-form .input-group > .input-group {
+  margin-top: 3rem;
+}
+
+#contact .contact-form .input-group .input-field {
+  color: var(--light-gray-color);
+  font-size: 1.6rem;
+  background-color: var(--light-gray-color-opacitybg);
+  border: 2px solid var(--light-gray-color-opacitystr);
+  border-radius: 5px;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  caret-color: var(--primary-color);
+}
+
+#contact .contact-form .btnsend-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 3rem;
 }

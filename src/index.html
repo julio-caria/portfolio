@@ -73,7 +73,9 @@
       </div>
 
       <div id="down-arrow">
-        <a href="#about" id="arrow-element"><i class="ph ph-caret-double-down"></i></a>
+        <a href="#about" id="arrow-element"
+          ><i class="ph ph-caret-double-down"></i
+        ></a>
       </div>
     </main>
 
@@ -278,7 +280,37 @@
       </div>
     </section>
 
-    <section id="contact"></section>
+    <section id="contact">
+      <div class="section-message">
+        <h2 class="title">Contact</h2>
+        <p class="description">
+          Interested in a project or want to talk about how I can help? I'd love
+          to hear from you! Whether it's to answer questions, discuss ideas or
+          start a partnership, I'm here to help.
+        </p>
+      </div>
+      <div class="contact-form">
+        <form>
+          <div class="input-group">
+            <label for="name"></label>
+            <input class="input-field" id="name" type="text" placeholder="Name"/>
+          </div>
+          <div class="input-group">
+            <label for="subject"></label>
+            <input class="input-field" id="subject" type="text" placeholder="Subject"/>
+          </div>
+          <div class="input-group">
+            <label for="description"></label>
+            <textarea class="input-field" id="description" rows="20" cols="70" placeholder="Description" ></textarea>
+          </div>
+        </form>
+        <div class="btnsend-container">
+          <button class="btn btn-primary" type="submit">
+            Send message <i class="ph-fill ph-paper-plane-tilt"></i>
+          </button>
+        </div>
+      </div>
+    </section>
 
     <footer id="footer"></footer>
   </body>
