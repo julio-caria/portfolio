@@ -362,77 +362,7 @@ main #down-arrow #arrow-element {
   font-size: 2.4rem;
 }
 
-@media screen and (min-width: 900px) {
-  section {
-    padding: 14rem;
-  }
-  main {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  .main-content {
-    display: flex;
-    flex-direction: row;
-  }
-  main .left-container {
-    max-width: 46rem;
-  }
-  main .right-container .bubble-image img {
-    width: 43.5rem;
-    height: 41.7rem;
-  }
-  main #down-arrow {
-    position: relative;
-    margin-top: 10%;
-  }
-  #about .section-message {
-    max-width: 40%;
-  }
-  #about .flow-description {
-    display: flex;
-    flex-direction: row;
-  }
-  #about .flow-description .image-about {
-    order: 1;
-    width: 43rem;
-    min-height: 58rem;
-  }
-  #about .chat-flow {
-    order: 2;
-  }
-  #about .chat-flow .chat {
-    max-width: 38.2rem;
-    min-height: 15.8rem;
-  }
-  #about .social-medias {
-    width: 8rem;
-    gap: 3rem;
-    order: 3;
 
-    display: flex;
-    flex-direction: column;
-  }
-  #projects .container {
-    width: 45%;
-  }
-  #projects .filters {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 2rem;
-    gap: 3rem;
-  }
-  #projects .projects-cards .card {
-    display: flex;
-    flex-direction: row;
-  }
-  #contact .contact-form .btnsend-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-}
 
 /* PROJECTS SECTION */
 
@@ -679,6 +609,12 @@ main #down-arrow #arrow-element {
   padding: 9.2rem;
 }
 
+#footer .info-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
 #footer .presentation {
   display: flex;
   flex-direction: column;
@@ -769,4 +705,95 @@ main #down-arrow #arrow-element {
   
   color: var(--gray-color);
   font-size: 1.6rem;
+}
+
+
+@media screen and (min-width: 900px) {
+  section {
+    padding: 14rem;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: row;
+  }
+  main .left-container {
+    max-width: 46rem;
+  }
+  main .right-container .bubble-image img {
+    width: 43.5rem;
+    height: 41.7rem;
+  }
+  main #down-arrow {
+    position: relative;
+    margin-top: 10%;
+  }
+  #about .section-message {
+    max-width: 40%;
+  }
+  #about .flow-description {
+    display: flex;
+    flex-direction: row;
+  }
+  #about .flow-description .image-about {
+    order: 1;
+    width: 43rem;
+    min-height: 58rem;
+  }
+  #about .chat-flow {
+    order: 2;
+  }
+  #about .chat-flow .chat {
+    max-width: 38.2rem;
+    min-height: 15.8rem;
+  }
+  #about .social-medias {
+    width: 8rem;
+    gap: 3rem;
+    order: 3;
+
+    display: flex;
+    flex-direction: column;
+  }
+  #projects .container {
+    width: 45%;
+  }
+  #projects .filters {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2rem;
+    gap: 3rem;
+  }
+  #projects .projects-cards .card {
+    display: flex;
+    flex-direction: row;
+  }
+  #contact .contact-form .btnsend-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  #footer {
+    display: flex; 
+    flex-direction: column;
+  }
+  #footer .info-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  #footer .info-footer .presentation {
+    max-width: 30%;
+  }
+  #footer .footer-links {
+    display: flex;
+    flex-direction: row;
+  }
 }
