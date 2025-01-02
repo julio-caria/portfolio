@@ -16,33 +16,29 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="shortcut icon"
-      href="./assets/favicon.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <!-- HEADER -->
     <header id="header">
       <span>
-        <a href="#"
+        <a href="#" tabindex="1"
           ><img src="./assets/logo.svg" alt="Jottace Logo" loading="lazy"
         /></a>
       </span>
 
       <navbar id="navbar">
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" tabindex="2">Home</a></li>
+          <li><a href="#about" tabindex="3">About</a></li>
+          <li><a href="#projects" tabindex="4">Projects</a></li>
+          <li><a href="#contact" tabindex="5">Contact</a></li>
         </ul>
         <!-- <div class="menu-hamburguer">
           <i class="ph ph-list"></i>
         </div> -->
       </navbar>
-      <button class="btn btn-talk">
+      <button class="btn btn-talk" tabindex="6">
         Let's Talk
         <i class="ph ph-envelope"></i>
       </button>
@@ -57,7 +53,7 @@
             show some of my projects.
           </p>
           <span
-            ><a href="#about" class="btn btn-seemore"
+            ><a href="#about" class="btn btn-seemore" tabindex="7"
               >See more <i class="ph ph-arrow-right"></i></a
           ></span>
         </div>
@@ -73,7 +69,7 @@
       </div>
 
       <div id="down-arrow">
-        <a href="#about" id="arrow-element"
+        <a href="#about" id="arrow-element" tabindex="8"
           ><i class="ph ph-caret-double-down"></i
         ></a>
       </div>
@@ -118,22 +114,24 @@
         </div>
         <div class="social-medias">
           <div class="media">
-            <a href="https://github.com/julio-caria"
+            <a href="https://github.com/julio-caria" tabindex="9"
               ><i class="ph-fill ph-github-logo"></i
             ></a>
           </div>
           <div class="media">
-            <a href="mailto:juliocaria.contato@hotmail.com"
+            <a href="mailto:juliocaria.contato@hotmail.com" tabindex="10"
               ><i class="ph-bold ph-at"></i
             ></a>
           </div>
           <div class="media">
-            <a href="https://www.linkedin.com/in/j%C3%BAlio-caria-8558b3248/"
+            <a
+              href="https://www.linkedin.com/in/j%C3%BAlio-caria-8558b3248/"
+              tabindex="11"
               ><i class="ph-bold ph-linkedin-logo"></i
             ></a>
           </div>
           <div class="media">
-            <a href="https://www.behance.net/jliocaria"
+            <a href="https://www.behance.net/jliocaria" tabindex="12"
               ><i class="ph-bold ph-behance-logo"></i
             ></a>
           </div>
@@ -158,14 +156,15 @@
             type="text"
             id="search-project"
             placeholder="Filter by title or description"
+            tabindex="13"
           />
         </div>
 
         <div class="filters">
-          <span class="filter">All</span>
-          <span class="filter">UI/UX Design</span>
-          <span class="filter">HTML/CSS and JS</span>
-          <span class="filter">ReactJS</span>
+          <span class="filter" tabindex="14">All</span>
+          <span class="filter" tabindex="15">UI/UX Design</span>
+          <span class="filter" tabindex="16">HTML/CSS and JS</span>
+          <span class="filter" tabindex="17">ReactJS</span>
         </div>
       </div>
 
@@ -194,13 +193,13 @@
             </div>
             <div class="links-project">
               <div class="link">
-                <a href="">
+                <a href="#" tabindex="18">
                   See Figma
                   <i class="ph ph-figma-logo"></i>
                 </a>
               </div>
               <div class="link">
-                <a href="">
+                <a href="#" tabindex="19">
                   Visit Project
                   <i class="ph-bold ph-arrow-square-out"></i>
                 </a>
@@ -232,13 +231,13 @@
             </div>
             <div class="links-project">
               <div class="link">
-                <a href="">
+                <a href="#" tabindex="20">
                   See Figma
                   <i class="ph ph-figma-logo"></i>
                 </a>
               </div>
               <div class="link">
-                <a href="">
+                <a href="#" tabindex="21">
                   Visit Project
                   <i class="ph-bold ph-arrow-square-out"></i>
                 </a>
@@ -271,13 +270,13 @@
             </div>
             <div class="links-project">
               <div class="link">
-                <a href="">
+                <a href="#" tabindex="22">
                   See Figma
                   <i class="ph ph-figma-logo"></i>
                 </a>
               </div>
               <div class="link">
-                <a href="">
+                <a href="#" tabindex="23">
                   Visit Project
                   <i class="ph-bold ph-arrow-square-out"></i>
                 </a>
@@ -306,6 +305,7 @@
               id="name"
               type="text"
               placeholder="Name"
+              tabindex="24"
             />
           </div>
           <div class="input-group">
@@ -315,6 +315,7 @@
               id="subject"
               type="text"
               placeholder="Subject"
+              tabindex="25"
             />
           </div>
           <div class="input-group">
@@ -325,11 +326,12 @@
               rows="20"
               cols="70"
               placeholder="Description"
+              tabindex="26"
             ></textarea>
           </div>
         </form>
         <div class="btnsend-container">
-          <button class="btn btn-primary" type="submit">
+          <button class="btn btn-primary" type="submit" tabindex="27">
             Send message <i class="ph-fill ph-paper-plane-tilt"></i>
           </button>
         </div>
@@ -347,22 +349,24 @@
           </p>
           <div class="social-medias">
             <div class="media">
-              <a href="https://github.com/julio-caria"
+              <a href="https://github.com/julio-caria" tabindex="28"
                 ><i class="ph-fill ph-github-logo"></i
               ></a>
             </div>
             <div class="media">
-              <a href="mailto:juliocaria.contato@hotmail.com"
+              <a href="mailto:juliocaria.contato@hotmail.com" tabindex="29"
                 ><i class="ph-bold ph-at"></i
               ></a>
             </div>
             <div class="media">
-              <a href="https://www.linkedin.com/in/j%C3%BAlio-caria-8558b3248/"
+              <a
+                href="https://www.linkedin.com/in/j%C3%BAlio-caria-8558b3248/"
+                tabindex="30"
                 ><i class="ph-bold ph-linkedin-logo"></i
               ></a>
             </div>
             <div class="media">
-              <a href="https://www.behance.net/jliocaria"
+              <a href="https://www.behance.net/jliocaria" tabindex="31"
                 ><i class="ph-bold ph-behance-logo"></i
               ></a>
             </div>
@@ -372,17 +376,17 @@
           <div class="links">
             <p class="title-links">Links</p>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#" tabindex="32">Home</a></li>
+              <li><a href="#about" tabindex="33">About</a></li>
+              <li><a href="#projects" tabindex="34">Projects</a></li>
+              <li><a href="#contact" tabindex="35">Contact</a></li>
             </ul>
           </div>
           <div class="links">
             <p class="title-links">Extra</p>
             <ul>
-              <li><a href="#">Project Pages</a></li>
-              <li><a href="">Sitemap</a></li>
+              <li><a href="#" tabindex="36">Project Pages</a></li>
+              <li><a href="#" tabindex="37">Sitemap</a></li>
             </ul>
           </div>
         </div>
