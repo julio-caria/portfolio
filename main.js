@@ -4,15 +4,6 @@ const filterBtns = document.querySelectorAll('.filter-btn')
 
 let selectedCategory = 'all'
 
-const noProjectsFound = document.createElement('div');
-noProjectsFound.className = 'no-projects-message';
-noProjectsFound.textContent = 'Ainda não foi desenvolvido nenhum projeto com essas tecnologias.'
-noProjectsFound.style.display = 'none';
-
-// projectItem.appendChild(noProjectsFound)
-
-// let anyVisible = false;
-
 function filterProjects() {
   const searchTerm = searchInput.value.toLowerCase();
 
@@ -23,13 +14,10 @@ function filterProjects() {
 
     if(matchCategory && matchText) {
       project.style.display = '';
-      // anyVisible = true;
     } else {
       project.style.display = 'none';
     }
   })
-
-  // noProjectsFound.style.display = anyVisible ? 'none' : 'block';
 }
 
 searchInput.addEventListener('input', filterProjects);
