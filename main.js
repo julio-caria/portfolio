@@ -1,30 +1,44 @@
 const searchInput = document.getElementById('search-project');
-const titleProject = document.querySelectorAll('.name-project')
-const descriptionProject = document.querySelectorAll('.description-project')
-const projectsContainer = document.getElementById("projects-card")
-const rightContainer = document.parentElement;
+const projectItems = document.querySelectorAll('.project-item');
+const filterBtns = document.querySelectorAll('.filter-btn')
 
-const query = searchInput.value.toLowerCase();
+let selectedCategory = 'all'
 
-function renderItems(filteredItems) {
-  projectsContainer.innerHTML = ''
+const noProjectsFound = document.createElement('div');
+noProjectsFound.className = 'no-projects-message';
+noProjectsFound.textContent = 'Ainda não foi desenvolvido nenhum projeto com essas tecnologias.'
+noProjectsFound.style.display = 'none';
 
-  if(filteredItems.length === 0) {
-    projectsContainer.innerHTML = `<div class="not-found"><p>Nenhum item econtrado.</p></div>`
-  }
+// projectItem.appendChild(noProjectsFound)
 
-  filteredItems.foreach(item => {
-    if(descriptionProject.includes(query) || titleProject.includes(query)) {
-      // Caso contenha as informacoes pesquisadas, exibir o elemento pai (card)
-      parent.style.display('block')
-    } else { 
-      // Caso náo tenha n o titulo ou descricao, ocultar o elemento pai.
-      parent.style.display('none')
+// let anyVisible = false;
+
+function filterProjects() {
+  const searchTerm = searchInput.value.toLowerCase();
+
+  projectItems.forEach(project => {
+    const matchCategory = selectedCategory === 'all' || project.getAttribute('data-category') === selectedCategory
+
+    const matchText = project.textContent.toLowerCase().includes(searchTerm) || project.getAttribute('data-title').toLowerCase().includes(searchTerm);
+
+    if(matchCategory && matchText) {
+      project.style.display = '';
+      // anyVisible = true;
+    } else {
+      project.style.display = 'none';
     }
   })
 
+  // noProjectsFound.style.display = anyVisible ? 'none' : 'block';
 }
 
-searchInput.addEventListener('input', () => {
-   
+searchInput.addEventListener('input', filterProjects);
+
+filterBtns.forEach(filter => {
+  filter.addEventListener('click', () => {
+    filterBtns.forEach(btn => btn.classList.remove('active'));
+    filter.classList.add('active');
+    selectedCategory = filter.getAttribute('data-filter');
+    filterProjects();
+  })
 })

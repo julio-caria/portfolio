@@ -17,6 +17,8 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+
+
   </head>
   <body>
     <!-- HEADER -->
@@ -161,15 +163,15 @@
         </div>
 
         <div class="filters">
-          <span class="filter" tabindex="14">All</span>
-          <span class="filter" tabindex="15">UI/UX Design</span>
-          <span class="filter" tabindex="16">HTML/CSS and JS</span>
-          <span class="filter" tabindex="17">ReactJS</span>
+          <span class="filter filter-btn active" tabindex="14" data-filter="all">All</span>
+          <span class="filter filter-btn" tabindex="15" data-filter="uiux">UI/UX Design</span>
+          <span class="filter filter-btn" tabindex="16" data-filter="htmljs">HTML/CSS and JS</span>
+          <span class="filter filter-btn" tabindex="17" data-filter="react">ReactJS</span>
         </div>
       </div>
 
       <div class="projects-cards" id="projects-card">
-        <div class="card">
+        <div class="project-item card" data-category="htmljs" data-title="Dynamic Digital Clock">
           <div class="left-container">
             <img
               src="./assets/Project_Dynamic_Digital_Clock.png"
@@ -208,7 +210,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="project-item card" data-category="uiux" data-title="UniAcademy">
           <div class="left-container">
             <img
               src="./assets/Project_Uni_Academy.png"
@@ -246,7 +248,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="project-item card" data-category="uiux" data-title="Mimo Recommendation for gifts with AI">
           <div class="left-container">
             <img
               src="./assets/Project_mimo.png"
@@ -396,5 +398,8 @@
         <p class="text-copy">Júlio Caria 2024 - All rights reserved</p>
       </div>
     </footer>
+
+
+    <script src="main.js"></script>
   </body>
 </html>
