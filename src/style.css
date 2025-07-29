@@ -358,8 +358,6 @@ main #down-arrow #arrow-element {
   font-size: 2.4rem;
 }
 
-
-
 /* PROJECTS SECTION */
 
 #projects {
@@ -427,7 +425,7 @@ main #down-arrow #arrow-element {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 #projects .filters:hover > :not(:hover) {
@@ -593,7 +591,7 @@ main #down-arrow #arrow-element {
 
 #contact .contact-form .btnsend-container {
   margin-top: 3rem;
-  width: 50%;
+  width: 100%;
 }
 
 #contact .contact-form .btnsend-container .btn {
@@ -655,7 +653,7 @@ main #down-arrow #arrow-element {
   border: 2px solid var(--light-gray-color-opacitystr);
   border-radius: 5px;
   padding: 1rem;
-  
+
   min-width: 8rem;
 }
 
@@ -708,13 +706,12 @@ main #down-arrow #arrow-element {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  
+
   color: var(--gray-color);
   font-size: 1.6rem;
 }
 
-
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1080px) {
   section {
     padding: 14rem;
   }
@@ -772,26 +769,19 @@ main #down-arrow #arrow-element {
     display: flex;
     flex-direction: column;
   }
-  #projects { 
+  #projects {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   #projects .container {
-    max-width: 50%;
+    max-width: 75%;
   }
-  #projects .filters {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 2rem;
-    gap: 3rem;
-  }
-  #projects .projects-cards { 
+  #projects .projects-cards {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: min-content;
+    /* grid-template-rows: min-content; */
     max-width: 75%;
   }
   #projects .projects-cards .card {
@@ -799,23 +789,31 @@ main #down-arrow #arrow-element {
     flex-direction: column;
     height: 100%;
   }
-  #projects .project-cards .left-container { 
+  #projects .project-cards .left-container {
     max-height: 300px;
   }
-  #contact .section-message { 
-    max-width: 50%;
+  #projects .projects-cards .left-container img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #contact .section-message {
+    max-width: 75%;
   }
   #contact .contact-form {
-    max-width: 50%;
+    max-width: 75%;
   }
   #contact .contact-form .btnsend-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    max-width: 50%;
+    width: 100%;
+  }
+  #contact .contact-form .btnsend-container .btn-send {
+    width: 25%;
   }
   #footer {
-    display: flex; 
+    display: flex;
     flex-direction: column;
   }
   #footer .info-footer {
@@ -823,7 +821,6 @@ main #down-arrow #arrow-element {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
   }
   #footer .info-footer .presentation {
     max-width: 30%;
