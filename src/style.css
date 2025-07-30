@@ -116,6 +116,24 @@ textarea:focus {
   }
 }
 
+.ellipsis-multiline {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-see-more {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--primary-color);
+} 
+.btn-see-more:hover {
+   filter: brightness(2);
+}
+
 /* HEADER */
 
 header {
@@ -502,7 +520,7 @@ main #down-arrow #arrow-element {
 }
 
 #projects .projects-cards .description-project {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 #projects .projects-cards .badges-project {
@@ -779,7 +797,7 @@ main #down-arrow #arrow-element {
     justify-content: center;
   }
   #projects .container {
-    max-width: 50%;
+    max-width: 75%;
   }
   #projects .filters {
     display: flex;
@@ -789,18 +807,27 @@ main #down-arrow #arrow-element {
     gap: 3rem;
   }
   #projects .projects-cards { 
-    display: grid;
+    display: flex;
     grid-template-columns: auto auto auto;
-    grid-template-rows: min-content;
-    max-width: 75%;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3rem;
+    width: 100%;
+    max-width: 100%;
   }
   #projects .projects-cards .card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 100%;
   }
-  #projects .project-cards .left-container { 
+  #projects .projects-cards .left-container { 
     max-height: 300px;
+    flex: 0 0 50rem;
+  }
+  #projects .projects-cards .left-container img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
   #contact .section-message { 
     max-width: 50%;
