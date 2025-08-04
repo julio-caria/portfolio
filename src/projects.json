@@ -1,0 +1,40 @@
+{
+  "projects" : [
+    {
+      "name": "UniAcademy",
+      "category": ["UI/UX", "Figma", "Protótipo"],
+      "description": "This project was developed in Figma and consists of a user interface (UI) for a gym management system. The focus was to create a modern, intuitive and functional design that would serve both gym managers and customers, facilitating the control of subscriptions, training tracking and access to important information.",
+      "coverImage": "./assets/Project_Uni_Academy.png",
+      "figmaLink": "",
+      "githubLink": "https://github.com/julio-caria/Digital-Clock",
+      "deployLink": "https://julio-caria.github.io/Digital-Clock/"
+    },
+    {
+      "name": "Digital Dynamic Clock",
+      "category": ["HTML", "CSS", "Javascript"],
+      "description": "This project was developed using HTML, CSS and JavaScript to create an interactive interface that displays the date and time in real time. The goal was to create a dynamic digital clock that updates automatically, in addition to showing the day of the week, the full date and the current year.",
+      "coverImage": "./assets/Project_Dynamic_Digital_Clock.png",
+      "figmaLink": "https://www.figma.com/design/le2iepD2C4IoYXq9e22Z0G/Project-Semestral---Uninove-2-Semestre?node-id=0-1&t=P26gRWYMF8q3rskL-1",
+      "githubLink": "",
+      "deployLink": "https://www.figma.com/proto/le2iepD2C4IoYXq9e22Z0G/Project-Semestral---Uninove-2-Semestre?node-id=0-1&t=P26gRWYMF8q3rskL-1"
+    },
+    {
+      "name": "Mimo - Não passe horas escolhendo um presente",
+      "category": ["UI/UX", "Figma"],
+      "description": "This project was developed in Figma and aims to create an interface for a gift recommendation app. The main idea of ​​the project is to provide users with a personalized experience by suggesting gifts based on information provided, such as preferences, age, interests, and budget. The design was designed to be intuitive, pleasant, and easy to use, ensuring that users find the ideal gift quickly and without complications.",
+      "coverImage": "./assets/Project_mimo.png",
+      "figmaLink": "https://www.figma.com/design/QL1PF93t4cJCDqmoqvNhjF/Web-Mobile?node-id=940-550&t=6LTBibRhQ8v2r8QV-1",
+      "githubLink": "",
+      "deployLink": ""
+    },
+    {
+      "name": "DaModa E-commerce",
+      "category": ["Figma", "UI/UX"],
+      "description": "A project that I developed for a college course. The aim was to create a CRUD for registering items in the database. However, I focused on assembling the base design for something more visual and concrete. The project is something initial on which I didn't concentrate much on UI/UX concepts, but it demonstrates my interest in the area and evolution, being one of the first projects I did on this theme.",
+      "coverImage": "./assets/Project_DaModa.png",
+      "figmaLink": "https://www.figma.com/design/JP0jbSiEh1jHDAWAQcllBj/Da.Moda---Uninove-1-Semestre?node-id=0-1&t=PkigwLfpLoGI1KfF-1",
+      "githubLink": "",
+      "deployLink": ""
+    }
+  ]
+}

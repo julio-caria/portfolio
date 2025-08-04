@@ -466,7 +466,7 @@ main #down-arrow #arrow-element {
   background-color: var(--primary-color);
 }
 
-#projects .projects-cards {
+#projects #projects-cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -477,7 +477,7 @@ main #down-arrow #arrow-element {
   width: 100%;
 }
 
-#projects .projects-cards .card {
+#projects #projects-cards .card {
   display: flex;
   flex-direction: column;
 
@@ -487,41 +487,46 @@ main #down-arrow #arrow-element {
   width: 100%;
 }
 
-#projects .projects-cards .left-container {
+#projects #projects-cards .left-container {
   flex: 1;
+
   display: flex;
   justify-content: center;
   align-items: center;
 
   overflow: hidden;
+
+  height: auto;
+  max-height: 600px;
 }
 
-#projects .projects-cards .left-container img {
-  width: 100%;
-  height: 100%;
+#projects #projects-cards .left-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
   object-fit: cover;
   border-radius: 5px;
 }
 
-#projects .projects-cards .right-container {
+#projects #projects-cards .right-container {
   padding: 3rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-#projects .projects-cards .name-project {
+#projects #projects-cards .name-project {
   color: var(--primary-color);
 
   font-weight: 500;
   font-size: 2rem;
 }
 
-#projects .projects-cards .description-project {
+#projects #projects-cards .description-project {
   font-size: 1.6rem;
 }
 
-#projects .projects-cards .badges-project {
+#projects #projects-cards .badges-project {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -529,13 +534,13 @@ main #down-arrow #arrow-element {
   gap: 1rem;
 }
 
-#projects .projects-cards .badge {
+#projects #projects-cards .badge {
   background-color: var(--bg-color);
   padding: 1rem;
   border-radius: 5px;
 }
 
-#projects .projects-cards .links-project {
+#projects #projects-cards .links-project {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -543,12 +548,12 @@ main #down-arrow #arrow-element {
   gap: 3rem;
 }
 
-#projects .projects-cards .link a {
+#projects #projects-cards .link a {
   color: var(--primary-color);
   transition: 0.4s;
 }
 
-#projects .projects-cards .link a:hover {
+#projects #projects-cards .link a:hover {
   filter: brightness(1.2);
 }
 
@@ -796,31 +801,14 @@ main #down-arrow #arrow-element {
   #projects .container {
     max-width: 75%;
   }
-  #projects .projects-cards {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    /* grid-template-rows: min-content; */
-    max-width: 75%;
+  #projects #projects-cards { 
+    width: 75%;
+    display: flex;
+    flex-direction: column;
   }
-  #projects .projects-cards .card {
+  #projects #projects-cards .card {
     display: flex;
     flex-direction: row;
-    height: 100%;
-  }
-  #projects .project-cards .left-container {
-    max-height: 300px;
-    flex: 0 0 50rem;
-  }
-  #projects .projects-cards .left-container img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  #projects .projects-cards .left-container img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
   #contact .section-message {
     max-width: 75%;
